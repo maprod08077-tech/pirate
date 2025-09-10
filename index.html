@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hidden Sea Pulse | Home</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h2 class="logo">Hidden sea pulse</h2>
+    <nav class="navigation">
+    <body class="home-page">
+      <a href="#" class="btnLogin-popup">Home</a>
+    </nav>
+  </header>
+
+  <main data-aos="fade-up">
+    <a href="nextpage.html" class="start-btn">Start</a>
+  </main>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // เสียงเมื่อกดปุ่ม Start
+    const startBtn = document.querySelector('.start-btn');
+    const clickSound = new Audio('click.mp3'); // อย่าลืมใส่ไฟล์ click.mp3 ไว้ในโฟลเดอร์
+
+    startBtn.addEventListener('click', (e) => {
+      e.preventDefault(); // กันไม่ให้เปลี่ยนหน้าโดยตรง
+      clickSound.play();
+      setTimeout(() => {
+        window.location.href = startBtn.getAttribute('href');
+      }, 300); // รอให้เสียงเล่นก่อนถึงเปลี่ยนหน้า
+    });
+  </script>
+</body>
+</html>

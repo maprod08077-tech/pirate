@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hidden Sea Pulse | Quizzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+
+    <body class="quiz-page">
+
+    <!-- Intro (หน้าแรก) -->
+<div id="intro-screen" class="intro-screen">
+  <div class="intro-content">
+    <p>
+      คุณอย่างก้าวจนเท้าสัมผัสกับพื้นทราย ภาพตรงหน้าของคุณไม่มีตึกสูงลิ่วและผู้คนพลัดพลานอีกต่อไปแล้วมีเพียงทะเลสีครามและท้องฟ้าอันกว้างขว้าง<br><br>
+      คุณเดินมาที่นี่พร้อมกับใจที่คุณเตรียมมาตลอดทั้งสัปดาห์หรืออาจจะทั้งเดือน เพราะในวันนี้ชีวิตของคุณจะเปลี่ยนไปตลอดกาล<br><br>
+      เรือลำใหญ่และเสียงผู้คนกลุ่มหนึ่งกึกก้องดังภายในหูของคุณ ก่อนที่ตัวของคุณจะเดินขึ้นไปบนเรือลำนั้นพร้อมด้วยใจที่เปี่ยมพร้อมไปด้วยการผจญภัยและความท้าทาย<br><br>
+      — Acr1
+    </p>
+    <button id="start-btn" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 1 -->
+<div id="mid-story" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      เขาหัวเราะกับคำตอบของคุณพร้อมพูดว่า<br>
+      “ช่างเป็นความฝันที่ยิ่งใหญ่ จงค้นหาความหมายของตัวคุณเถิดหลังจากที่พวกเราแล่นเรือออกไปแล้ว”<br><br>
+      ก่อนที่เขาจะเดินหายเข้าไปในฝูงชน
+    </p>
+    <button id="mid-next-btn" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 2 -->
+<div id="second-story" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      คุณใช้ความคิดนานเกินไปในการเลือกวิธีเข้าหาผู้คน จนท้ายที่สุดลูกเรือกลุ่มหนึ่งได้เดินเข้ามาหาคุณ ก่อนคนหนึ่งในกลุ่มที่มีท่าทางน่ากลัวจะเอื้อมมือมากอดคอคุณไว้ราวกับพวกเรารู้จักกันนานนับเดือน
+    </p>
+    <button id="second-next-btn" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 3 -->
+<div id="third-story" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      เขาหัวเราะและกอดคอคุณแน่นขึ้น<br><br>
+    </p>
+    <button id="third-next-btn" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 4 -->
+<div id="fourth-story" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      “ฮ่าๆ เจ้าเด็กใหม่นี่น่าสนใจจังเลยนะ” เขาพูดทิ้งท้ายก่อนพวกเขาจะเดินหายไป<br><br>
+    </p>
+    <button id="fourth-next-btn" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 5 -->
+<div id="fifth-story" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      เวลาล่วงเลยจนตกดึก เรือโจรสลัดที่คุณขึ้นมาดูเหมือนจะมีธรรมเนียมปาร์ตี้รับน้องทุกคนครั้งและตอนนี้คุณก็ได้เป็นตัวเอกของงาน<br><br>
+    </p>
+    <button id="fifth-next-btn" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+  
+    <!-- ✅ QUIZ APP -->
+    <div class="app">
+      <h1>คำถาม</h1>
+      <div class="quiz">
+        <h2 id="question">Question goes here</h2>
+        <div id="answer-buttons" class="btn-container"></div>
+        <button id="next-btn" class="next-btn">Next</button>
+      </div>
+    </div>
+
+<!-- Story หลังข้อ 6-->
+  <div id="sixth-story" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      แสงสีมากมายสะท้อนไปทั่วเรือ เสียงหัวเราะแสนสนุกสนานดังก้องกังวาลไปทั่วพื้นทะเล
+    </p>
+    <button id="sixth-next-btn" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 7 -->
+<div id="seventh-story" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      ในที่สุดงานเลี้ยงก็เลิกรา ทุกคนต่างพากันแยกย้ายเข้าห้องพักล้มหัวลงบนที่นอนของตัวเองกันอย่างหมดแรง<br><br>
+      แต่ตอนนี้มีเพียงแค่คุณที่ยังคงนอนไม่หลับแม้คุณจะพยายามข่มตาแค่ไหน<br><br>
+
+      คุณคิดหลายเรื่องมากมายภายในหัวของคุณและความรู้สึกมากมายที่ท่วมท้นเข้ามาในอก คุณไม่เคยได้สัมผัสการได้อยู่รอบผู้คนแบบนี้มาก่อน<br><br>
+    </p>
+    <button id="seventh-next-btn" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 8 -->
+<div id="eighth-story" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      คุณใช้เวลาทั้งคืนกับการนอนคิดหลายร้อยเรื่องที่เกิดขึ้นก่อนที่คุณจะผลอยหลับไป<br><br>
+      เมื่อตื่นขึ้นอีกครั้งคุณก็พบว่าคุณถูกรายล้อมด้วยบรรดาลูกเรืออีกสิบๆคน พวกเขามีสีหน้าไม่ค่อยดีนักขณะมองมาที่คุณ<br>
+      กัปตันของเรือเดินตรงเข้ามาแทรกฝูงชนก่อนจะกล่าวกับคุณว่า<br><br>
+      “ฟื้นแล้วหรอเจ้าเด็กใหม่ ? รู้ตัวไหมว่าแกนอนไปนานถึง 2 วันเชียวนะ”<br>
+    </p>
+    <button id="eighth-next-btn" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 9 -->
+<div id="nine-story" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      สุดท้ายผู้คนก็แยกย้ายกัน เมื่อเห็นว่าคุณลุกขึ้นมาเดินได้แล้วและคุณยังดูสดใสยิ่งกว่าวันแรกที่ก้าวเท้าขึ้นเรือมาเสียอีก<br><br>
+      ลูกเรือคนเดียวกันกับที่เคยขอให้คุณทำความสะอาดแทนพวกเขาเดินปรี่เข้ามาหาคุณด้วยหน้าตารื่นเริง<br>
+      “นอนกินแรงไปถึง 2 วันเชียวนะแก ~ คงจะฝันหวานน่าดูเลยนะ ขณะที่พวกฉันจะต้องคอยทำงานหงิงๆแทนส่วนของแกน่ะ”
+    </p>
+    <button id="nine-next-btn" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 10 -->
+<div id="story-10" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      หลังจากที่คุณฟื้นขึ้นมาชีวิตประจำวันของคุณต่อจากนี้กลับวนเวียนอยู่กับการทำความสะอาด ไร้ซึ่งการผจญภัยใดๆอย่างที่คุณคาดหวังไว้<br><br>
+      ช่วงที่แดดยังส่องของวันหนึ่ง คุณกำลังทำความสะอาดเรืออย่างขมักเขม้นเหมือนกับทุกวัน<br><br>
+      แต่ทว่าคุณกลับได้ยินเสียงตะโกนของลูกเรือคนหนึ่งที่ดังขัดเสียงครืนของท้องทะเลได้อย่างเฉียบขาด<br>
+      “ปลาหมึกยักษณ์คราเครน! ปลาหมึกยักษ์คราเครน! มันกำลังจะเจ็บตีพวกเรา!”<br><br>
+      ทันทีที่คุณได้ยิน อะดรีนาลีนในเลือดของคุณได้ถูกสูบฉีดอย่างไม่เคยเป็นมาก่อน
+    </p>
+    <button id="story-10-next" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 11 -->
+<div id="story-11" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      คุณและลูกเรือคนอื่นๆต่างช่วยกันกำจัดเจ้าปลาหมึกยักษ์ที่มารุกรานเรือของพวกคุณอย่างเอาเป็นเอาตาย<br><br>
+      แต่ในระหว่างการต่อสู้นั้นคุณกลับเหลือบไปเห็นแกนนำกลุ่มโจรสลัดที่เคยรังแกคุณ<br><br>
+      ผู้ชายคนนั้นกำลังร้องอย่างทรมานจากบาดแผลที่ขา
+    </p>
+    <button id="story-11-next" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 12 -->
+<div id="story-12" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      ไม่ว่าคุณจะเลือกจะทำแบบไหน เมื่อเจ้าปลาหมึกยักษ์นั้นเริ่มอ่อนแรงมันก็ยอมถอยกลับอย่างง่ายดาย<br><br>
+      คุณหันหลังและรีบเข้าไปช่วยรักษาชายคนนั้นก่อนที่คุณจะช่วยพยุงเขาให้ลุกขึ้นยืน<br><br>
+      “เจ้าเด็กใหม่...” เขาเรียกคุณพร้อมหันมาพร้อมสายตาที่คุณไม่คิดจะได้จากชายคนนี้<br><br>
+      ก่อนที่จู่ๆ คุณจะรู้สึกราวกับว่าน้ำหนักตัวของคุณชั่งเบาหวิว เมื่อเริ่มตั้งสติได้ภาพล่าสุดที่คุณเห็นคือใบหน้าของชายที่คุณเพิ่งช่วยชีวิตไปเมื่อครู่มองลงมาที่คุณ
+    </p>
+    <button id="story-12-next" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 13 -->
+<div id="story-13" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      สุดท้ายร่างกายของคุณก็จมดิ่งลงสู่ใต้ท้องทะเลอันกว้างใหญ่ที่เป็นความฝันของคุณในตอนแรก
+    </p>
+    <button id="story-13-next" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 14 -->
+<div id="story-14" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      ตอนนี้คุณรู้สึกยังไงบ้างเมื่อความฝันไม่เป็นไปตามที่คุณหวัง?
+    </p>
+    <button id="story-14-next" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+<!-- Story หลังข้อ 15 -->
+<div id="story-15" class="intro-screen" style="display:none;">
+  <div class="intro-content">
+    <p>
+      หากสามารถเลือกเส้นทางอื่นที่ไม่ใช่ท้องทะเลแห่งนี้ คุณจะยังอยากเปลี่ยนเส้นทางไหม?<br><br>
+      สุดท้ายแล้วไม่ว่าคุณจะเลือกอะไร คุณก็ไม่สามารถย้อนกลับไปแก้ไขอดีตได้อีกแล้ว<br><br>
+      ทุกอย่างล้วนหล่อหลอมให้กลายเป็นคุณในตอนนี้ ปัจจุบัน ที่นี้ และคุณยังคงหายใจอยู่<br><br>
+      คุณเริ่มรู้สึกถึงสัมผัสอันบางเบากำลังโอบล้อมรอบตัวคุณไว้<br><br>
+      อ่อนโยนและน่าคิดถึง.......
+    </p>
+    <button id="story-15-next" class="next-btn">ถัดไป</button>
+  </div>
+</div>
+
+    <audio id="click-sound" src="sounds/select.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
